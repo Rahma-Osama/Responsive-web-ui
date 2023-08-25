@@ -20,16 +20,17 @@ class PaymentsDetailList extends StatelessWidget {
         ),
         Container(
           decoration: BoxDecoration(
+            color: AppColors.primaryBg,
             borderRadius: BorderRadius.circular(30),
             boxShadow: const [
               BoxShadow(
-                offset: Offset(10, 15),
+                // offset: Offset(10, 15),
                 blurRadius: 15,
                 color: AppColors.iconGray,
               ),
             ],
           ),
-          child: Image.asset('assets/card.png'),
+          child: Image.asset('assets/img.png'),
         ),
         SizedBox(
           height: SizeConfig.blockSizeVertical! * 5,

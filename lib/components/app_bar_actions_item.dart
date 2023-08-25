@@ -19,16 +19,7 @@ class AppBarActionItem extends StatelessWidget {
             width: 20.0,
           ),
         ),
-        const SizedBox(
-          width: 10,
-        ),
-        IconButton(
-          onPressed: () {},
-          icon: SvgPicture.asset(
-            'assets/ring.svg',
-            width: 20.0,
-          ),
-        ),
+
         const SizedBox(
           width: 15,
         ),
