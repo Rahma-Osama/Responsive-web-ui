@@ -4,6 +4,7 @@ import 'package:responsive_dashboard_ui/cubit/states.dart';
 
 import '../components/screens/color catalogs/colors_catatlogs.dart';
 import '../components/screens/home/home.dart';
+import '../components/screens/services/services.dart';
 import '../components/screens/users/user_events.dart';
 import '../components/screens/users/users_view.dart';
 
@@ -14,7 +15,7 @@ class LayoutCubit extends Cubit<LayoutStates> {
     HomeBody(),
     Users(),
     Colors(),
-    HomeBody(),
+    Services(),
     UserEvents()
   ];
   changeIndex(index) {

@@ -27,28 +27,29 @@ class InfoCard extends StatelessWidget {
         color: Colors.white,
       ),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           SvgPicture.asset(
             icon!,
             width:Responsive.isDesktop(context) ? 35 : 28,
           ),
           SizedBox(
-            height: SizeConfig.blockSizeHorizontal! * 2,
+            height: SizeConfig.blockSizeHorizontal! * 1.5,
           ),
            PrimaryText(
             text: label!,
             size:Responsive.isDesktop(context) ? 16 : 14,
             color: AppColors.secondary,
           ),
-          SizedBox(
-            height: SizeConfig.blockSizeHorizontal! * 1,
-          ),
-           PrimaryText(
-            text: amount!,
-            size: Responsive.isDesktop(context) ? 18 : 16,
-            fontWeight: FontWeight.w800,
-          )
+          // SizedBox(
+          //   height: SizeConfig.blockSizeHorizontal! * 1,
+          // ),
+          //  PrimaryText(
+          //   text: amount!,
+          //   size: Responsive.isDesktop(context) ? 18 : 16,
+          //   fontWeight: FontWeight.w800,
+          // )
         ],
       ),
     );
