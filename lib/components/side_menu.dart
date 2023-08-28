@@ -7,7 +7,6 @@ import 'package:responsive_dashboard_ui/cubit/cubit.dart';
 import 'package:responsive_dashboard_ui/cubit/states.dart';
 import 'package:responsive_dashboard_ui/style/colors.dart';
 
-import '../data.dart';
 
 class SideMenu extends StatefulWidget {
   const SideMenu({
@@ -90,7 +89,7 @@ class _SideMenuState extends State<SideMenu> {
 iconBuilder({
   required  icon,
   required context,
-  required func(),
+  required Function() func,
 }) =>
     IconButton(
       onPressed: func,

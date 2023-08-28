@@ -1,20 +1,12 @@
-import 'dart:ui';
 
-import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:responsive_dashboard_ui/components/bar_chart_component.dart';
-import 'package:responsive_dashboard_ui/components/history_table.dart';
 import 'package:responsive_dashboard_ui/config/responsive.dart';
 import 'package:responsive_dashboard_ui/config/size_config.dart';
 import 'package:responsive_dashboard_ui/cubit/cubit.dart';
 import 'package:responsive_dashboard_ui/cubit/states.dart';
-import 'package:responsive_dashboard_ui/data.dart';
 import 'package:responsive_dashboard_ui/style/colors.dart';
-import 'package:responsive_dashboard_ui/style/style.dart';
 
-import 'components/Pie_chart.dart';
 import 'components/components.dart';
 
 class Dashboard extends StatefulWidget {
@@ -181,8 +173,8 @@ class _DashboardState extends State<Dashboard> {
                     child: Container(
                       height: SizeConfig.screenHeight,
                       color: AppColors.secondaryBg,
-                      child: SingleChildScrollView(
-                        padding: const EdgeInsets.all(30),
+                      child: const SingleChildScrollView(
+                        padding: EdgeInsets.all(30),
                         child: Column(
                           children:  [
                             AppBarActionItem(),

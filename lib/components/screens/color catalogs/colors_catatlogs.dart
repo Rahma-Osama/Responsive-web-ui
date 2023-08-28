@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:responsive_dashboard_ui/components/Pie_chart.dart';
 import 'package:responsive_dashboard_ui/components/screens/color_builder.dart';
 import 'package:responsive_dashboard_ui/cubit/cubit.dart';
 import 'package:responsive_dashboard_ui/cubit/states.dart';
@@ -24,9 +23,9 @@ class Colors extends StatelessWidget {
                   children: [
                     headerText(text: "Almunium", context: context,),
             SizedBox(child: GridView.builder(
-              physics: NeverScrollableScrollPhysics(),
+              physics: const NeverScrollableScrollPhysics(),
               shrinkWrap: true,
-              itemCount:30,gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: Responsive.isDesktop(context)?10 :8,mainAxisSpacing:MediaQuery.of(context).size.height/60 ), itemBuilder: (BuildContext context, int index)=>ColorBuilder(),)
+              itemCount:30,gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: Responsive.isDesktop(context)?10 :8,mainAxisSpacing:MediaQuery.of(context).size.height/60 ), itemBuilder: (BuildContext context, int index)=>const ColorBuilder(),)
             ) ],
                 ),
                 SizedBox(height: MediaQuery.of(context).size.height/60,),
@@ -35,9 +34,9 @@ class Colors extends StatelessWidget {
                   children: [
                     headerText(text: "Khashmunium", context: context,),
             SizedBox(child: GridView.builder(
-              physics: NeverScrollableScrollPhysics(),
+              physics: const NeverScrollableScrollPhysics(),
               shrinkWrap: true,
-              itemCount:30,gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: Responsive.isDesktop(context)?10 :8,mainAxisSpacing:MediaQuery.of(context).size.height/60 ), itemBuilder: (BuildContext context, int index)=>ColorBuilder(),)
+              itemCount:30,gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: Responsive.isDesktop(context)?10 :8,mainAxisSpacing:MediaQuery.of(context).size.height/60 ), itemBuilder: (BuildContext context, int index)=>const ColorBuilder(),)
             ) ],
                 ),
 

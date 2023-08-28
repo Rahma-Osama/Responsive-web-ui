@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:responsive_dashboard_ui/config/responsive.dart';
 import 'package:responsive_dashboard_ui/config/size_config.dart';
 import 'package:responsive_dashboard_ui/data.dart';

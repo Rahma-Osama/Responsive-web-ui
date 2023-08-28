@@ -35,9 +35,9 @@ class PaymentsDetailList extends StatelessWidget {
         SizedBox(
           height: SizeConfig.blockSizeVertical! * 5,
         ),
-        Column(
+        const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: const [
+          children: [
             PrimaryText(
               text: 'Recent Activities',
               size: 18,
@@ -67,9 +67,9 @@ class PaymentsDetailList extends StatelessWidget {
         SizedBox(
           height: SizeConfig.blockSizeVertical! * 5,
         ),
-        Column(
+        const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: const [
+          children: [
             PrimaryText(
               text: 'Upcoming Payments',
               size: 18,

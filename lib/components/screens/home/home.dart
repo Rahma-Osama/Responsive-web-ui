@@ -1,17 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard_ui/data.dart';
 
 import '../../../config/responsive.dart';
 import '../../../config/size_config.dart';
 import '../../../style/colors.dart';
 import '../../../style/style.dart';
-import '../../app_bar_actions_item.dart';
-import '../../bar_chart_component.dart';
 import '../../dashboard_header.dart';
 import '../../history_table.dart';
 import '../../info_card.dart';
 import '../../payments_detail_list.dart';
-import '../../side_menu.dart';
 class HomeBody extends StatelessWidget {
   const HomeBody({Key? key}) : super(key: key);
 
@@ -30,11 +26,11 @@ class HomeBody extends StatelessWidget {
             ),
             SizedBox(
               width: SizeConfig.screenWidth,
-              child: Wrap(
+              child: const Wrap(
                 runSpacing: 20,
                 spacing: 20,
                 alignment: WrapAlignment.spaceBetween,
-                children: const [
+                children: [
                   InfoCard(
                     icon: 'assets/credit-card.svg',
                     label: 'Transfer via\nCard number',
@@ -96,9 +92,9 @@ class HomeBody extends StatelessWidget {
             SizedBox(
               height:Responsive.isDesktop(context) ? SizeConfig.blockSizeVertical! * 5 : SizeConfig.blockSizeVertical! * 2,
             ),
-            Column(
+            const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: const [
+              children: [
                 PrimaryText(
                   text: 'History',
                   size: 30.0,

@@ -4,11 +4,6 @@ import 'package:responsive_dashboard_ui/cubit/cubit.dart';
 import 'package:responsive_dashboard_ui/cubit/states.dart';
 import 'package:responsive_dashboard_ui/style/colors.dart';
 
-import '../../../config/responsive.dart';
-import '../../../config/size_config.dart';
-import '../../app_bar_actions_item.dart';
-import '../../payments_detail_list.dart';
-import '../../side_menu.dart';
 class Users extends StatelessWidget {
   const Users({Key? key}) : super(key: key);
 
@@ -40,7 +35,7 @@ class Users extends StatelessWidget {
 
                 ),
                 children: [
-                  TableRow(
+                  const TableRow(
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.only(topLeft: Radius.circular(20),topRight: Radius.circular(20)),
                           color: AppColors.secondary
@@ -48,13 +43,13 @@ class Users extends StatelessWidget {
                       children: [
                         TableCell(
                           child: Padding(
-                            padding: const EdgeInsets.all(16.0),
+                            padding: EdgeInsets.all(16.0),
                             child: Text("User",textAlign: TextAlign.center,style: TextStyle(fontWeight: FontWeight.bold),),
                           ),
                         ),
                         TableCell(
                           child: Padding(
-                            padding: const EdgeInsets.all(16.0),
+                            padding: EdgeInsets.all(16.0),
                             child: Text("Last Update",textAlign: TextAlign.center,style: TextStyle(fontWeight: FontWeight.bold),),
                           ),
 
@@ -83,9 +78,9 @@ class Users extends StatelessWidget {
                             ),
                           ),
                         ),
-                        TableCell(
+                        const TableCell(
                           child: Padding(
-                            padding: const EdgeInsets.all(8.0),
+                            padding: EdgeInsets.all(8.0),
                             child: Text("2 days ago",textAlign: TextAlign.center,),
                           ),
 

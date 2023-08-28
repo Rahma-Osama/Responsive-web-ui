@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard_ui/style/colors.dart';
 
-import '../../../config/responsive.dart';
-import '../../../config/size_config.dart';
-import '../../app_bar_actions_item.dart';
-import '../../payments_detail_list.dart';
-import '../../side_menu.dart';
 class UserEvents extends StatelessWidget {
   const UserEvents({Key? key}) : super(key: key);
 
@@ -35,7 +30,7 @@ class UserEvents extends StatelessWidget {
 
             ),
             children: [
-              TableRow(
+              const TableRow(
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.only(topLeft: Radius.circular(20),topRight: Radius.circular(20)),
                       color: AppColors.secondary
@@ -43,13 +38,13 @@ class UserEvents extends StatelessWidget {
                   children: [
                     TableCell(
                       child: Padding(
-                        padding: const EdgeInsets.all(16.0),
+                        padding: EdgeInsets.all(16.0),
                         child: Text("Event",textAlign: TextAlign.center,style: TextStyle(fontWeight: FontWeight.bold),),
                       ),
                     ),
                     TableCell(
                       child: Padding(
-                        padding: const EdgeInsets.all(16.0),
+                        padding: EdgeInsets.all(16.0),
                         child: Text("Time",textAlign: TextAlign.center,style: TextStyle(fontWeight: FontWeight.bold),),
                       ),
 
@@ -57,12 +52,12 @@ class UserEvents extends StatelessWidget {
 
                   ]
               ),
-              ...List.generate(60, (index) =>  TableRow(
+              ...List.generate(60, (index) =>  const TableRow(
                   children: [
                     TableCell(
                       child: Padding(
-                        padding:  const EdgeInsets.all(8.0),
-                        child: const Row(
+                        padding:  EdgeInsets.all(8.0),
+                        child: Row(
                           children: [
                             Padding(
                               padding: EdgeInsets.all(8.0),
@@ -74,7 +69,7 @@ class UserEvents extends StatelessWidget {
                     ),
                     TableCell(
                       child: Padding(
-                        padding: const EdgeInsets.all(8.0),
+                        padding: EdgeInsets.all(8.0),
                         child: Text("12:00",textAlign: TextAlign.center,),
                       ),
 

@@ -1,5 +1,3 @@
-import 'components/screens/home/home.dart';
-import 'components/screens/users/users_view.dart';
 
 const recentActivities = [
   {

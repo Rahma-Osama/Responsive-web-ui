@@ -13,9 +13,9 @@ class Services extends StatelessWidget {
           children: [
             GridView .builder(
               itemCount: 9,
-                physics: NeverScrollableScrollPhysics(),
+                physics: const NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisSpacing: Responsive.isDesktop(context)?MediaQuery.of(context).size.width/20 :MediaQuery.of(context).size.width/4,crossAxisCount: Responsive.isDesktop(context)?4 : Responsive.isTablet(context)?3:2,mainAxisSpacing: MediaQuery.of(context).size.height/20), itemBuilder: (context,index)=>InfoCard(icon: "assets/bank.svg",label: "أبواب و نوافذ",amount: "",))
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisSpacing: Responsive.isDesktop(context)?MediaQuery.of(context).size.width/20 :MediaQuery.of(context).size.width/4,crossAxisCount: Responsive.isDesktop(context)?4 : Responsive.isTablet(context)?3:2,mainAxisSpacing: MediaQuery.of(context).size.height/20), itemBuilder: (context,index)=>const InfoCard(icon: "assets/bank.svg",label: "أبواب و نوافذ",amount: "",))
           ],
         ),
 

@@ -12,11 +12,11 @@ class LayoutCubit extends Cubit<LayoutStates> {
   LayoutCubit() : super(IntialState());
   var screenIndex=0;
   var screens=[
-    HomeBody(),
-    Users(),
-    Colors(),
-    Services(),
-    UserEvents()
+    const HomeBody(),
+    const Users(),
+    const Colors(),
+    const Services(),
+    const UserEvents()
   ];
   changeIndex(index) {
     screenIndex = index;

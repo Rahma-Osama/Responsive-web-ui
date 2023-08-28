@@ -23,8 +23,8 @@ class AppBarActionItem extends StatelessWidget {
         const SizedBox(
           width: 15,
         ),
-        Row(
-          children: const [
+        const Row(
+          children: [
             CircleAvatar(
               radius: 17,
               backgroundImage: NetworkImage(
