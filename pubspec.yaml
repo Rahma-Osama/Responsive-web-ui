@@ -16,6 +16,10 @@ dependencies:
   fl_chart: ^0.63.0
   bloc: ^8.1.2
   flutter_bloc: ^8.1.3
+  flutter_screenutil:
+  google_fonts: ^5.1.0
+  intl:
+  date_picker_timeline:
 
 dev_dependencies:
   flutter_test:
@@ -34,3 +38,25 @@ flutter:
         - asset: fonts/Poppins-SemiBold.ttf
         - asset: fonts/Poppins-Bold.ttf
 
+
+#    - family: Ubuntu
+#      fonts:
+#        - asset: assets/fonts/Ubuntu-Light.ttf
+#          weight: 300
+#        - asset: assets/fonts/Ubuntu-Regular.ttf
+#          weight: 400
+#        - asset: assets/fonts/Ubuntu-Medium.ttf
+#          weight: 500
+#        - asset: assets/fonts/Ubuntu-Bold.ttf
+#          weight: 700
+#    - family: Raleway
+#      fonts:
+#        - asset: fonts/Raleway-Regular.ttf
+#        - asset: fonts/Raleway-Italic.ttf
+#          style: italic
+#    - family: RobotoMono
+#      fonts:
+#        - asset: fonts/RobotoMono-Regular.ttf
+#        - asset: fonts/RobotoMono-Bold.ttf
+#          weight: 700
+#uses-material-design: true

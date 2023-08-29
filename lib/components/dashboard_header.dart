@@ -6,22 +6,25 @@ import 'package:responsive_dashboard_ui/style/style.dart';
 class DashboardHeader extends StatelessWidget {
   const DashboardHeader({
     Key? key,
+    required this.headerOne,
+    required this.headerTwo,
   }) : super(key: key);
-
+final String headerOne ;
+ final String headerTwo ;
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
-        const Column(
+       Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             PrimaryText(
-              text: 'Dashboard',
+              text: headerOne,
               size: 30.0,
               fontWeight: FontWeight.w800,
             ),
             PrimaryText(
-              text: 'Payments Updates',
+              text: headerTwo,
               size: 16,
               color: AppColors.secondary,
             ),

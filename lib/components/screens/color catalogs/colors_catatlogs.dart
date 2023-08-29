@@ -25,7 +25,11 @@ class Colors extends StatelessWidget {
             SizedBox(child: GridView.builder(
               physics: const NeverScrollableScrollPhysics(),
               shrinkWrap: true,
-              itemCount:30,gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: Responsive.isDesktop(context)?10 :8,mainAxisSpacing:MediaQuery.of(context).size.height/60 ), itemBuilder: (BuildContext context, int index)=>const ColorBuilder(),)
+              itemCount:30,
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: Responsive.isDesktop(context)?10 :8,
+                  mainAxisSpacing:MediaQuery.of(context).size.height/60 ),
+              itemBuilder: (BuildContext context, int index)=>const ColorBuilder(),)
             ) ],
                 ),
                 SizedBox(height: MediaQuery.of(context).size.height/60,),

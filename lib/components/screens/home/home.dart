@@ -20,7 +20,10 @@ class HomeBody extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const DashboardHeader(),
+            const DashboardHeader(
+              headerOne: "Dashboard",
+              headerTwo: "",
+            ),
             SizedBox(
               height:Responsive.isDesktop(context) ? SizeConfig.blockSizeVertical! * 5 : SizeConfig.blockSizeVertical! * 3,
             ),

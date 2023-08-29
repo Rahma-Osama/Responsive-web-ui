@@ -1,5 +1,6 @@
 
 import 'package:bloc/bloc.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:responsive_dashboard_ui/cubit/states.dart';
 
 import '../components/screens/color catalogs/colors_catatlogs.dart';
@@ -22,4 +23,8 @@ class LayoutCubit extends Cubit<LayoutStates> {
     screenIndex = index;
     emit(ChangeScreen());
   }
+
+  TextEditingController email = TextEditingController();
+  TextEditingController password = TextEditingController();
+
 }
