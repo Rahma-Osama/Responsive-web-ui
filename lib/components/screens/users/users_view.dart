@@ -40,27 +40,32 @@ class Users extends StatelessWidget {
                         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 6),
                         itemBuilder: (context , index)=>
 
-                            Container(
-                              alignment: Alignment.center,
+                            GestureDetector(
+                              onTap: (){
+                                BlocProvider.of<LayoutCubit>(context).changeIndex(4);
+                              },
+                              child: Container(
+                                alignment: Alignment.center,
                          // padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 10),
                           margin: const EdgeInsets.symmetric(vertical: 12, horizontal: 10),
                           width: 30,
                           decoration: BoxDecoration(
-                            boxShadow: const [
-                              BoxShadow(
-                                // offset: Offset(10, 15),
-                                blurRadius: 4,
-                                color: AppColors.iconGray,
-                              ),
-                            ],
-                            color: AppColors.white,
-                            borderRadius: BorderRadius.circular(20),
+                              boxShadow: const [
+                                BoxShadow(
+                                  // offset: Offset(10, 15),
+                                  blurRadius: 4,
+                                  color: AppColors.iconGray,
+                                ),
+                              ],
+                              color: AppColors.white,
+                              borderRadius: BorderRadius.circular(20),
                           ),
-                              child: Text("User ${index + 1}",
-                                 style: const TextStyle(
-                               fontSize: 25,color: Colors.black ),),
+                                child: Text("User ${index + 1}",
+                                   style: const TextStyle(
+                                 fontSize: 25,color: Colors.black ),),
 
-                        ),),
+                        ),
+                            ),),
 
 
 
