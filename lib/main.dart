@@ -8,7 +8,7 @@ import 'package:responsive_dashboard_ui/style/colors.dart';
 
 
 void main() {
-  GoogleFonts.config.allowRuntimeFetching = false ;
+  // GoogleFonts.config.allowRuntimeFetching = false ;
 
   // screenIndex=0;
   runApp(const MyApp());
@@ -24,6 +24,9 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'Responsive Dashboard',
           theme: ThemeData(
+            textTheme: GoogleFonts.bitterTextTheme(
+              Theme.of(context).textTheme
+            ),
             primarySwatch: Colors.blue,
             scaffoldBackgroundColor: AppColors.primaryBg,
           ),
