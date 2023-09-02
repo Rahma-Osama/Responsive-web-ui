@@ -2,7 +2,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:responsive_dashboard_ui/cubit/states.dart';
-
 import '../components/screens/color catalogs/colors_catatlogs.dart';
 import '../components/screens/home/home.dart';
 import '../components/screens/services/services.dart';
@@ -17,7 +16,7 @@ class LayoutCubit extends Cubit<LayoutStates> {
     const Users(),
     const Colors(),
     const Services(),
-    const UserEvents()
+    const UserEvents(),
   ];
   changeIndex(index) {
     screenIndex = index;

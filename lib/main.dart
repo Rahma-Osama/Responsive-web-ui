@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_dashboard_ui/cubit/cubit.dart';
-import 'package:responsive_dashboard_ui/dashboard.dart';
 import 'package:responsive_dashboard_ui/login_screen/login_page.dart';
 import 'package:responsive_dashboard_ui/style/colors.dart';
 
@@ -27,7 +26,7 @@ class MyApp extends StatelessWidget {
             primarySwatch: Colors.blue,
             scaffoldBackgroundColor: AppColors.primaryBg,
           ),
-          home: const Dashboard(),
+          home: const LoginPage(),
         )
     );
   }
